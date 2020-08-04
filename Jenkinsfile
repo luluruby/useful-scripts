@@ -2,7 +2,8 @@ node {
     stage('Build') { 
                 echo "checkout from SCM"
                 
-                git 'https://github.com/webweb04/useful-scripts.git'
+               
+                git 'https://github.com/luluruby/useful-scripts.git'
                 // Make the output directory.
                 
                 echo "debug"
