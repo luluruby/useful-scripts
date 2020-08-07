@@ -28,6 +28,7 @@ node {
      //  sh "diff testlog.log reflog.log"
    
      sh "sh ./SUT.sh >testlog.txt "
+        sh "dos2unix reflog.txt testlog.txt"
     sh "diff testlog.txt reflog.txt"
         sh "diff testlog.txt reflog.txt >diff.txt"
         sh "cp diff.txt diff.sh"
